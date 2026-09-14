@@ -1,0 +1,6 @@
+{
+  "sensors": [
+    {"name": "Full Frame", "crop": 1.0},
+    {"name": "APS-C", "crop": 1.5}
+  ]
+}
