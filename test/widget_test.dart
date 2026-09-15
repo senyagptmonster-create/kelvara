@@ -1,10 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kelvara/product/product_app.dart';
+import 'package:kelvara/presentation/kelvara_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('KelvaraApp smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const KelvaraApp());
+    expect(find.byType(KelvaraApp), findsOneWidget);
   });
 }
