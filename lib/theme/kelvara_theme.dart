@@ -1,29 +1,29 @@
 import 'package:flutter/material.dart';
 
-class KelvaraPalette {
+class KelvaraTheme {
   static const bg = Color(0xFFF8FAFC);
   static const surface = Color(0xFFFFFFFF);
   static const edge = Color(0xFFE2E8F0);
-  static const accent = Color(0xFF2563EB);
-  static const accent2 = Color(0xFF60A5FA);
+  static const accent = Color(0xFF2563EB); // Optical Blue
+  static const accentLight = Color(0xFF60A5FA);
   static const ink = Color(0xFF1E293B);
-  static const inkMuted = Color(0xFF64748B);
+  static const muted = Color(0xFF64748B);
 
-  static ThemeData get theme {
+  static ThemeData get themeData {
     return ThemeData(
-      useMaterial3: true,
-      fontFamily: 'AppFont',
+      brightness: Brightness.light,
       scaffoldBackgroundColor: bg,
+      fontFamily: 'AppFont',
+      primaryColor: accent,
       colorScheme: const ColorScheme.light(
-        surface: surface,
         primary: accent,
-        secondary: accent2,
-        onSurface: ink,
+        surface: surface,
       ),
       appBarTheme: const AppBarTheme(
         backgroundColor: surface,
-        foregroundColor: ink,
         elevation: 0,
+        foregroundColor: ink,
+        iconTheme: IconThemeData(color: ink),
       ),
     );
   }

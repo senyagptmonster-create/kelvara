@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'presentation/kelvara_app.dart';
+import 'kelvara_app.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
+void main() {
   runApp(const KelvaraApp());
 }
